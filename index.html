@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin Kaushik | Electronics &amp; Communication Engineering</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Sachin Kaushik | Electronics &amp; Communication Engineering" />
+  <meta name="description" content="Portfolio of Sachin Kaushik - Undergraduate in Electronics &amp; Communication Engineering (ECE) at JECRC University, specializing in Embedded Systems, IoT, Edge AI, and Robotics." />
+  <meta name="author" content="Sachin Kaushik" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Beautiful Deep Midnight Starry Sky Background Canvas -->
+  <canvas id="nightSkyCanvas" class="night-sky-canvas"></canvas>
+
+  <!-- ====================================================================
+       NAVIGATION BAR
+       ==================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" id="skLogoTrigger" title="Sachin Kaushik Portfolio">
+        <div class="logo-badge">SK</div>
+        <div class="logo-text">Sachin <span>Kaushik</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Direct GitHub Link -->
+        <a href="https://github.com/sachinkaushik24" target="_blank" rel="noopener noreferrer" class="social-icon-btn link-github" title="Sachin's GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <!-- Direct LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/sachin-kaushik-9a31a2440" target="_blank" rel="noopener noreferrer" class="social-icon-btn link-linkedin" title="Sachin's LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <!-- Mobile Nav Toggle -->
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       HERO SECTION
+       ==================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-chip" id="heroStatusBadge">
+          <span class="pulse-dot"></span> Available for Projects &amp; Research
+        </div>
+
+        <div>
+          <h1 class="hero-title" id="heroName">Sachin Kaushik</h1>
+          <div class="hero-subtitle" id="heroTitle">Electronics &amp; Communication Engineering Undergraduate</div>
+        </div>
+
+        <p class="hero-bio" id="heroBio">
+          First-year ECE undergraduate at JECRC University, Jaipur (2026–2030). Focused on embedded firmware, connected IoT ecosystems, Edge AI inference, and autonomous robotics.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <i class="fas fa-folder-open"></i> View Projects
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <i class="far fa-envelope"></i> Contact Me
+          </a>
+          <a href="resume.pdf" id="resumeBtn" class="btn-cv btn-secondary" target="_blank">
+            <i class="fas fa-arrow-down"></i> Download CV
+          </a>
+        </div>
+      </div>
+
+      <!-- Engineer Summary Profile Card -->
+      <div class="hero-visual">
+        <div class="engineer-card">
+          <div class="engineer-card-header">
+            <div class="engineer-avatar">SK</div>
+            <div class="engineer-info">
+              <h3>Sachin Kaushik</h3>
+              <p>ECE Undergrad &bull; Class of 2030</p>
+            </div>
+          </div>
+
+          <div class="spec-list">
+            <div class="spec-row">
+              <span class="spec-label"><i class="fas fa-university"></i> Institution</span>
+              <span class="spec-val" id="specCollege">JECRC University</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label"><i class="fas fa-graduation-cap"></i> Degree</span>
+              <span class="spec-val" id="specDegree">B.Tech ECE (2026 — 2030)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label"><i class="fas fa-map-marker-alt"></i> Location</span>
+              <span class="spec-val" id="specLocation">Jaipur, Rajasthan, India</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label"><i class="fas fa-award"></i> Board Distinctions</span>
+              <span class="spec-val" id="specScores">Class X: 92.17% | Class XII: 90.4%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       ABOUT ME SECTION
+       ==================================================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Background &amp; <span class="accent-text">Engineering Focus</span></h2>
+        <p class="section-subtitle">Bridging rigorous electronics theory with practical, hands-on physical computing.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-story-card" id="aboutStory">
+          <p>I am currently in my first year pursuing a Bachelor of Technology in Electronics and Communication Engineering (ECE) at JECRC University, Jaipur (2026–2030).</p>
+          <p>Having secured 92.17% in Class 10 (2023) and 90.4% in Class 12 Science (2025), I combine strong analytical and mathematical fundamentals with an active hands-on enthusiasm for electronics and physical computing.</p>
+          <p>My primary areas of interest include embedded C/C++ firmware development, microcontrollers (ESP32, STM32, Arduino), communication protocols (UART, SPI, I2C, MQTT), Edge AI/TinyML inference, and robotics kinematics.</p>
+        </div>
+
+        <div class="about-metrics-grid">
+          <div class="metric-card">
+            <div class="metric-val">92.17%</div>
+            <div class="metric-lbl">Class X Academic Distinction (2023)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">90.4%</div>
+            <div class="metric-lbl">Class XII Science Merit (2025)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">2026 — 2030</div>
+            <div class="metric-lbl">B.Tech in ECE @ JECRC University</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">4 Domains</div>
+            <div class="metric-lbl">Embedded, IoT, Edge AI &amp; Robotics</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Focus Areas Grid -->
+      <div class="focus-grid" id="focusAreasGrid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       EDUCATION SECTION
+       ==================================================================== -->
+  <section id="education" style="background: var(--bg-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Education</div>
+        <h2 class="section-title">Academic <span class="accent-text">Background</span></h2>
+        <p class="section-subtitle">Educational journey and academic achievements.</p>
+      </div>
+
+      <div class="education-cards-list" id="educationCardsList">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       TECHNICAL SKILLS SECTION
+       ==================================================================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Technical Skills</div>
+        <h2 class="section-title">Competencies &amp; <span class="accent-text">Tooling</span></h2>
+        <p class="section-subtitle">Hands-on technologies, programming languages, protocols, and developer tools.</p>
+      </div>
+
+      <div class="skills-categories-grid" id="skillsCategoriesGrid">
+        <!-- Rendered dynamically as clean chips -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       PROJECTS SECTION
+       ==================================================================== -->
+  <section id="projects" style="background: var(--bg-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Projects</div>
+        <h2 class="section-title">Hardware &amp; Software <span class="accent-text">Implementations</span></h2>
+        <p class="section-subtitle">Practical projects integrating microcontrollers, sensors, communication protocols, and cloud platforms.</p>
+      </div>
+
+      <div class="projects-filter-bar">
+        <button type="button" class="p-filter-btn active" data-filter="all">All Projects</button>
+        <button type="button" class="p-filter-btn" data-filter="iot">IoT &amp; Cloud</button>
+        <button type="button" class="p-filter-btn" data-filter="embedded">Embedded Systems</button>
+        <button type="button" class="p-filter-btn" data-filter="edge-ai">Edge AI</button>
+        <button type="button" class="p-filter-btn" data-filter="robotics">Robotics</button>
+      </div>
+
+      <div class="projects-cards-grid" id="projectsGrid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       ACHIEVEMENTS SECTION
+       ==================================================================== -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Achievements</div>
+        <h2 class="section-title">Academic Distinctions &amp; <span class="accent-text">Honors</span></h2>
+        <p class="section-subtitle">Board examination ranks, institutional milestones, and technical certifications.</p>
+      </div>
+
+      <div class="achievements-cards-grid" id="achievementsCardsGrid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CONTACT SECTION
+       ==================================================================== -->
+  <section id="contact" style="background: var(--bg-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Contact</div>
+        <h2 class="section-title">Get In <span class="accent-text">Touch</span></h2>
+        <p class="section-subtitle">Interested in collaborating on embedded projects, robotics initiatives, or academic research? Let's connect.</p>
+      </div>
+
+      <div class="contact-layout-grid">
+        <!-- Contact Cards Stack -->
+        <div class="contact-info-stack">
+          <!-- Mobile Phone -->
+          <div class="contact-detail-card">
+            <div class="contact-card-main">
+              <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <div class="contact-field-label">Mobile Phone</div>
+                <a href="tel:9950436998" id="contactPhone" class="contact-field-val">+91 9950436998</a>
+              </div>
+            </div>
+            <button type="button" class="btn-copy-action" id="copyPhoneBtn" title="Copy Phone Number">
+              Copy
+            </button>
+          </div>
+
+          <!-- Email Address -->
+          <div class="contact-detail-card">
+            <div class="contact-card-main">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-field-label">Email Address</div>
+                <a href="mailto:kaushiksachin240406@gmail.com" id="contactEmail" class="contact-field-val">kaushiksachin240406@gmail.com</a>
+              </div>
+            </div>
+            <button type="button" class="btn-copy-action" id="copyEmailBtn" title="Copy Email Address">
+              Copy
+            </button>
+          </div>
+
+          <!-- Location -->
+          <div class="contact-detail-card">
+            <div class="contact-card-main">
+              <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="contact-field-label">Location</div>
+                <span id="contactLocation" class="contact-field-val">Jaipur, Rajasthan, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Buttons -->
+          <div class="social-profile-cards">
+            <a href="https://github.com/sachinkaushik24" id="githubProfileBtn" target="_blank" rel="noopener noreferrer" class="social-prof-btn">
+              <i class="fab fa-github"></i> GitHub Profile
+            </a>
+            <a href="https://www.linkedin.com/in/sachin-kaushik-9a31a2440" id="linkedinProfileBtn" target="_blank" rel="noopener noreferrer" class="social-prof-btn">
+              <i class="fab fa-linkedin" style="color:#0a66c2;"></i> LinkedIn Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h3>Send a Direct Message</h3>
+          <p>Have an inquiry or opportunity? Feel free to reach out directly.</p>
+          
+          <form id="portfolioContactForm" class="contact-form">
+            <div class="form-row-2">
+              <div class="form-field">
+                <label for="formName">Full Name</label>
+                <input type="text" id="formName" class="form-input" placeholder="e.g. Rahul Sharma" required />
+              </div>
+              <div class="form-field">
+                <label for="formEmail">Email Address</label>
+                <input type="email" id="formEmail" class="form-input" placeholder="e.g. rahul@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="formSubject">Subject</label>
+              <input type="text" id="formSubject" class="form-input" placeholder="e.g. Project Collaboration / Opportunity" required />
+            </div>
+
+            <div class="form-field">
+              <label for="formMessage">Message</label>
+              <textarea id="formMessage" class="form-input" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="align-self: flex-start; margin-top: 0.35rem;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        &copy; 2026 <strong>Sachin Kaushik</strong> &bull; B.Tech in Electronics &amp; Communication Engineering @ JECRC University
+      </div>
+      <div>
+        Embedded Firmware &bull; IoT &bull; Edge AI &bull; Robotics
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       OWNER PRIVATE CONTROLS (Hidden from Visitors)
+       ==================================================================== -->
+  <!-- Owner Mode Active Bar -->
+  <div class="admin-active-bar" id="adminActiveBar">
+    <div class="admin-badge"><i class="fas fa-shield-alt"></i> Sachin Kaushik (Owner Mode)</div>
+    <div class="admin-bar-btns">
+      <button type="button" class="btn-admin-action" id="reopenEditorBtn"><i class="fas fa-edit"></i> Edit</button>
+      <button type="button" class="btn-admin-action btn-lock" id="lockAdminBtn" title="Lock owner mode"><i class="fas fa-lock"></i> Lock</button>
+    </div>
+  </div>
+
+  <!-- Security PIN Modal -->
+  <div class="pin-modal-backdrop" id="adminPinModal">
+    <div class="pin-modal-window">
+      <div class="pin-icon-wrap">
+        <i class="fas fa-lock"></i>
+      </div>
+      <h3 class="pin-title">Owner Verification</h3>
+      <p class="pin-subtitle">Restricted to Sachin Kaushik. Enter your security PIN to unlock the live editor.</p>
+      <form id="adminPinForm">
+        <div class="pin-input-wrap">
+          <input type="password" id="adminPinInput" maxlength="12" placeholder="Security PIN" autocomplete="off" />
+        </div>
+        <div class="pin-error-msg" id="pinErrorMsg"></div>
+        <div class="pin-actions">
+          <button type="button" class="btn-secondary" id="cancelPinBtn">Cancel</button>
+          <button type="submit" class="btn-primary" id="submitPinBtn">Unlock</button>
+        </div>
+      </form>
+      <div class="pin-hint">Private shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd></div>
+    </div>
+  </div>
+
+  <!-- Private Live Customizer Modal -->
+  <div class="editor-modal-backdrop" id="editorModal">
+    <div class="editor-modal-window">
+      <div class="modal-header">
+        <div class="modal-title">
+          <i class="fas fa-sliders-h" style="color:var(--accent-blue)"></i>
+          Portfolio Customizer
+        </div>
+        <button type="button" class="modal-close-btn" id="closeEditorBtn">&times;</button>
+      </div>
+
+      <div class="modal-tabs">
+        <button type="button" class="modal-tab-btn active" data-tab="general">General &amp; Contact</button>
+        <button type="button" class="modal-tab-btn" data-tab="education">Education</button>
+        <button type="button" class="modal-tab-btn" data-tab="projects">Projects</button>
+        <button type="button" class="modal-tab-btn" data-tab="achievements">Achievements</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Tab Pane: General -->
+        <div class="editor-tab-pane active" id="tabPane-general">
+          <div class="editor-grid-2">
+            <div class="editor-field">
+              <label>Full Name</label>
+              <input type="text" id="editFullName" />
+            </div>
+            <div class="editor-field">
+              <label>Professional Title</label>
+              <input type="text" id="editTitle" />
+            </div>
+          </div>
+
+          <div class="editor-grid-2">
+            <div class="editor-field">
+              <label>Status Badge Text</label>
+              <input type="text" id="editStatusBadge" />
+            </div>
+            <div class="editor-field">
+              <label>Institution</label>
+              <input type="text" id="editInstitution" />
+            </div>
+          </div>
+
+          <div class="editor-field">
+            <label>Short Bio</label>
+            <textarea id="editShortBio" rows="2"></textarea>
+          </div>
+
+          <div class="editor-field">
+            <label>Detailed About Me Story (Separate paragraphs with a blank line)</label>
+            <textarea id="editAboutDetailed" rows="5"></textarea>
+          </div>
+
+          <div class="editor-grid-2">
+            <div class="editor-field">
+              <label>Mobile Number (Formatted)</label>
+              <input type="text" id="editPhone" />
+            </div>
+            <div class="editor-field">
+              <label>Mobile Number (Raw digits)</label>
+              <input type="text" id="editPhoneRaw" />
+            </div>
+          </div>
+
+          <div class="editor-grid-2">
+            <div class="editor-field">
+              <label>Email Address</label>
+              <input type="email" id="editEmail" />
+            </div>
+            <div class="editor-field">
+              <label>Location</label>
+              <input type="text" id="editLocation" />
+            </div>
+          </div>
+
+          <div class="editor-grid-2">
+            <div class="editor-field">
+              <label>GitHub Profile URL</label>
+              <input type="url" id="editGithub" />
+            </div>
+            <div class="editor-field">
+              <label>LinkedIn Profile URL</label>
+              <input type="url" id="editLinkedin" />
+            </div>
+          </div>
+
+          <div class="editor-grid-2">
+            <div class="editor-field">
+              <label>Resume File URL or Path (e.g. resume.pdf)</label>
+              <input type="text" id="editResumeUrl" />
+            </div>
+            <div class="editor-field">
+              <label>Security PIN (Restricts editor to you only)</label>
+              <input type="password" id="editAdminPin" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Pane: Education -->
+        <div class="editor-tab-pane" id="tabPane-education">
+          <div id="editorEducationList"></div>
+          <button type="button" class="add-item-btn" id="addEducationItemBtn">
+            <i class="fas fa-plus"></i> Add Education Milestone
+          </button>
+        </div>
+
+        <!-- Tab Pane: Projects -->
+        <div class="editor-tab-pane" id="tabPane-projects">
+          <div id="editorProjectsList"></div>
+          <button type="button" class="add-item-btn" id="addProjectItemBtn">
+            <i class="fas fa-plus"></i> Add New Project
+          </button>
+        </div>
+
+        <!-- Tab Pane: Achievements -->
+        <div class="editor-tab-pane" id="tabPane-achievements">
+          <div id="editorAchievementsList"></div>
+          <button type="button" class="add-item-btn" id="addAchievementItemBtn">
+            <i class="fas fa-plus"></i> Add New Achievement
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-modal-action btn-reset-default" id="resetEditorDefaultsBtn">
+          Reset to Original
+        </button>
+        <div style="display:flex; gap:0.6rem;">
+          <button type="button" class="btn-modal-action btn-export-code" id="exportEditorFileBtn">
+            Download profile-data.js
+          </button>
+          <button type="button" class="btn-modal-action btn-apply-save" id="applyEditorChangesBtn">
+            Apply Live Changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="profile-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/editor.js"></script>
+</body>
+</html>
